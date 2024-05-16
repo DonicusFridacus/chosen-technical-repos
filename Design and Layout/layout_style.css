@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* Handles media queries for 
+- a standard phone to a large phone resolution, 
+- a standard tablet to a large tablet resolution, 
+- and a laptop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: #49547A;
+  display: flexbox;
+}
+
+/*Navigation Bar*/
+.navigation {
+  background-color: #35416C;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 18vh;
+  display: grid;
+  grid-template-columns: 18% 58% 18%;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  align-items: center;
+  justify-items: center;
+}
+
+.navigation-pages {
+  list-style-type: none;
+  display: inline-flex;
+  font-size: medium;
+}
+.navigation-pages li {
+  padding: 0 10px 0 10px;
+}
+
+.logo_img {
+  max-width: 55%;
+}
+
+.page-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-links a:visited {
+  color: white;
+}
+
+.page-links a:hover {
+  color: #FFE699;
+}
+
+.opened-page a {
+  text-underline-offset: 5px;
+  -webkit-text-decoration: underline solid #FFE699 3px;
+          text-decoration: underline solid #FFE699 3px;
+  color: #FFE699;
+}
+
+/*Get Free Quote Button*/
+#free_quote {
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  background-color: #FFE699;
+  color: black;
+  font-weight: bold;
+}
+
+/*Headings*/
+.article-headings {
+  font-size: x-large;
+  display: flex;
+  margin-top: 5%;
+}
+
+.left-line, .right-line {
+  background-color: #FFE699;
+  width: 150px;
+  height: 5px;
+}
+
+.left-line {
+  margin: 15px 0 0 auto;
+}
+
+.right-line {
+  margin: 15px auto 0 0;
+}
+
+.article-headings h2 {
+  padding: 0 50px 0 50px;
+  color: white;
+}
+
+/*---SERVICES PAGE---*/
+.offered-services {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: center;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  row-gap: 20%;
+  margin-top: 50px;
+}
+.offered-services h4 {
+  padding-bottom: 10px;
+}
+
+.services-img {
+  max-width: 90%;
+  padding-bottom: 20px;
+}
+
+.if-interested {
+  color: white;
+  margin-top: 15%;
+  text-align: center;
+  font-size: x-large;
+}
+.if-interested button {
+  border-radius: 5px;
+  font-size: large;
+  margin: 50px 100px 0 100px;
+  background-color: #FFE699;
+  padding: 15px 25px 15px 25px;
+  font-weight: bold;
+  width: 20%;
+}
+.if-interested img {
+  width: 30px;
+  padding-right: 10px;
+}
+
+#free-quote-services {
+  padding: 20px 25px 15px 25px;
+}
+
+/*---FOOTER---*/
+footer {
+  margin-top: 10%;
+  background-color: black;
+  height: 18vw;
+  padding: 50px 0 50px 0;
+}
+
+footer h3 {
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+/*Contacts and Links Section*/
+#contacts-links {
+  background-color: white;
+  border-radius: 40px;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+}
+#contacts-links hr {
+  width: 85%;
+  margin: 0 auto 0 auto;
+  height: 5px;
+  background-color: black;
+}
+
+#contact-nums {
+  display: inline-flex;
+  list-style-type: none;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#contact-nums li {
+  padding: 0 20px 0 20px;
+  font-weight: bold;
+}
+#contact-nums img {
+  max-width: 75%;
+}
+
+#socmed-links {
+  display: inline-flex;
+  list-style-type: none;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+#socmed-links img {
+  max-width: 70%;
+}
+#socmed-links li {
+  padding: 0 10px 0 10px;
+}
+
+#email {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto 0 80px;
+}
+#email p {
+  padding-left: 5px;
+}
+
+/*Copyright Section*/
+#copyright {
+  background-color: #FFE699;
+  height: 40px;
+}
+
+#copyright-text {
+  margin: 50px auto 0 auto;
+  width: 367px;
+  padding: 10px 10px 0 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=layout_style.css.map */
