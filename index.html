@@ -1,149 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/Design and Layout/Nav&Footer/nav_footer.css">
+    <link rel="stylesheet" href="/Design and Layout/Layout&Design/layout_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chosen Technical - Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
-    <header>
-        <img src="#" class="chosen-tech-logo">
-        <nav class="pageLinks">
-            <a href="#" class="homeLink">Home</a>
-            <a href="#" class="aboutLink">About Us</a>
-            <a href="#" class="serviceLink">Services</a>
-            <a href="#" class="projectLink">Projects</a>
-            <a href="#" class="contactLink">Contact Us</a>
-        </nav>
-        <button class="estimateButton">Get a Free Estimate</button>
-    </header>
+    <!--Navigation-->
+    <nav class="navigation">
+        <section class="company-logo"><a href=""><img class="logo_img" src="/Media/Prototype 2 (White Text).png"></a></section>
+        <section>
+            <ul class="navigation-pages">
+                <li class="opened-page"><a href="/index.html">HOME</a></li>
+                <li class="page-links"><a href="/Pages/about.html">ABOUT US</a></li>
+                <li class="page-links"><a href="/Pages/services.html">SERVICES</a></li>
+                <li class="page-links">CONTACT US</li>
+            </ul>  
+        </section>
+        <section><a><button id="free_quote">GET FREE QUOTE</button></a></section>
+    </nav>
+    
+    <hr>
+
     <main id="pageInfo">
-        <img src="#">
+        <img src="/Media/Home/serviceIcon.png">
         <div class="info_text">
-            <p>Your Gateway to Seamless Solutions and Unmatched Expertise</p>
-            <h1 class="companyName">Chosen Technical Services</h1>
-            <p>
-                Welcome to Chosen Technical Services, your trusted partner for a<br>
-                comprehensive range of technical solutions in Dubai, UAE. At Chosen<br>
-                Technical Services LLC, we pride ourselves on delivering excellence in<br>
-                every aspect of our services, ensuring the utmost satisfaction of our<br>
-                clients. From meticulous AC duct cleaning to reliable AC maintenance,<br>
-                proficient electrical works, and expert plumbing services, we are your go-<br>
+            <p class="company-slogan">Your Gateway to Seamless Solutions and Unmatched Expertise</p>
+            <h2 class="companyName">Chosen Technical Services</h2>
+            <p class="welcome-text">
+                Welcome to Chosen Technical Services, your trusted partner for a
+                comprehensive range of technical solutions in Dubai, UAE. At Chosen
+                Technical Services LLC, we pride ourselves on delivering excellence in
+                every aspect of our services, ensuring the utmost satisfaction of our
+                clients. From meticulous AC duct cleaning to reliable AC maintenance,
+                proficient electrical works, and expert plumbing services, we are your go-
                 to team for all your technical needs.
             </p>
         </div>
-        <div>
-            <button>Get a Free Estimate</button>
-            <button>View our Services</button>
+        <div class="pageInfo-btns">
+            <a><button id="view-services-btn">View our Services</button></a>
+            <a><button id="free-estimate-btn">Get a Free Estimate</button></a>
         </div>
     </main>
-    <div id="persuadeInfo">
-        <h1 class="persuadeText">Why Choose Us?</h1>
-        <h3>Experienced Leadership</h3>
-        <p>
-            Welcome to Chosen Technical Services, your trusted partner for a<br>
-            comprehensive range of technical solutions in Dubai, UAE. At Chosen<br>
-            Technical Services LLC, we pride ourselves on delivering excellence in<br>
-            every aspect of our services, ensuring the utmost satisfaction of our<br>
-            clients. From meticulous AC duct cleaning to reliable AC maintenance,<br>
-            proficient electrical works, and expert plumbing services, we are your go-<br>
-            to team for all your technical needs.
-        </p>
-        <h3>Free Estimation</h3>
-        <p>
-            Welcome to Chosen Technical Services, your trusted partner for a<br>
-            comprehensive range of technical solutions in Dubai, UAE. At Chosen<br>
-            Technical Services LLC, we pride ourselves on delivering excellence in<br>
-            every aspect of our services, ensuring the utmost satisfaction of our<br>
-            clients. From meticulous AC duct cleaning to reliable AC maintenance,<br>
-            proficient electrical works, and expert plumbing services, we are your go-<br>
-            to team for all your technical needs.
-        </p>
-        <h3>Exceptional Service Quality</h3>
-        <p>
-            Welcome to Chosen Technical Services, your trusted partner for a<br>
-            comprehensive range of technical solutions in Dubai, UAE. At Chosen<br>
-            Technical Services LLC, we pride ourselves on delivering excellence in<br>
-            every aspect of our services, ensuring the utmost satisfaction of our<br>
-            clients. From meticulous AC duct cleaning to reliable AC maintenance,<br>
-            proficient electrical works, and expert plumbing services, we are your go-<br>
-            to team for all your technical needs.
-        </p>
-        <h3>Flexible and Timely Solutions</h3>
-        <p>
-            Welcome to Chosen Technical Services, your trusted partner for a<br>
-            comprehensive range of technical solutions in Dubai, UAE. At Chosen<br>
-            Technical Services LLC, we pride ourselves on delivering excellence in<br>
-            every aspect of our services, ensuring the utmost satisfaction of our<br>
-            clients. From meticulous AC duct cleaning to reliable AC maintenance,<br>
-            proficient electrical works, and expert plumbing services, we are your go-<br>
-            to team for all your technical needs.
-        </p>
+
+    <!--WHY CHOOSE US SECTION-->
+    <div class="article-headings">
+        <div class="left-line"></div>
+        <h2>Why Choose Us?</h2>
+        <div class="right-line"></div>
     </div>
-    <div class="serviceInfo">
-        <img src="#">
-        <p>AC Repairs</p>
-        <img src="#">
-        <p>AC Repairs</p>
-        <img src="#">
-        <p>AC Repairs</p>
-        <img src="#">
-        <p>AC Repairs</p>
-        <img src="#">
-        <p>AC Repairs</p>
-        <img src="#">
-        <p>AC Repairs</p>
+    
+    <section id="persuadeInfo">
+        <section>
+            <img src="/Media/Home/leadership.png">
+            <div>
+                <h4>Experienced Leadership</h4>
+                <p>
+                    Welcome to Chosen Technical Services, your trusted partner for a
+                    comprehensive range of technical solutions in Dubai, UAE. At Chosen
+                    Technical Services LLC, we pride ourselves on delivering excellence in
+                    every aspect of our services, ensuring the utmost satisfaction of our
+                    clients. From meticulous AC duct cleaning to reliable AC maintenance,
+                    proficient electrical works, and expert plumbing services, we are your go-
+                    to team for all your technical needs.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <img src="/Media/Home/estimation.png">
+            <div>
+                <h4>Free Estimation</h4>
+                <p>
+                    Welcome to Chosen Technical Services, your trusted partner for a
+                    comprehensive range of technical solutions in Dubai, UAE. At Chosen
+                    Technical Services LLC, we pride ourselves on delivering excellence in
+                    every aspect of our services, ensuring the utmost satisfaction of our
+                    clients. From meticulous AC duct cleaning to reliable AC maintenance,
+                    proficient electrical works, and expert plumbing services, we are your go-
+                    to team for all your technical needs.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <img src="/Media/Home/exceptional.png">
+            <div>
+                <h4>Exceptional Service Quality</h4>
+                <p>
+                    Welcome to Chosen Technical Services, your trusted partner for a
+                    comprehensive range of technical solutions in Dubai, UAE. At Chosen
+                    Technical Services LLC, we pride ourselves on delivering excellence in
+                    every aspect of our services, ensuring the utmost satisfaction of our
+                    clients. From meticulous AC duct cleaning to reliable AC maintenance,
+                    proficient electrical works, and expert plumbing services, we are your go-
+                    to team for all your technical needs.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <img src="/Media/Home/timely.png">
+            <div>
+                <h4>Flexible and Timely Solutions</h4>
+                <p>
+                    Welcome to Chosen Technical Services, your trusted partner for a
+                    comprehensive range of technical solutions in Dubai, UAE. At Chosen
+                    Technical Services LLC, we pride ourselves on delivering excellence in
+                    every aspect of our services, ensuring the utmost satisfaction of our
+                    clients. From meticulous AC duct cleaning to reliable AC maintenance,
+                    proficient electrical works, and expert plumbing services, we are your go-
+                    to team for all your technical needs.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <!--OUR SERVICES SECTION-->
+    <div class="article-headings">
+        <div class="left-line"></div>
+        <h2>Our Services</h2>
+        <div class="right-line"></div>
+    </div>
+    <section class="serviceInfo">
+        <div class="service" id="srvce-1">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-2">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-3">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-4">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-5">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-6">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-7">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+        <div class="service" id="srvce-8">
+            <img src="/Media/Home/services.png">
+            <p>AC Repairs</p>
+        </div>
+    </section>
+
+    <div id="view-more" onclick="viewMoreServices()"><u>View More</u></div>
+
+    <div class="article-headings">
+        <div class="left-line"></div>
+        <h2>Client Reviews</h2>
+        <div class="right-line"></div>
     </div>
     <div class="reviewInfo">
-        <div>
-            <img src="#">
-            <img src="#">
-            <p class="reviewName">Name</p>
-            <p class="actualReview">Review</p>
+        <div class="reviewInfo-slide">
+            <div class="review">
+                <img src="#">
+                <p class="reviewName">Sandra Johnson</p>
+                <p class="actualReview">Chosen Technical Services exceeded my expectations with their prompt and efficient AC maintenance. The team, led by Jane Marito, was not only professional but also provided valuable insights into optimizing my home's cooling system. I highly recommend their services for anyone seeking reliable and customer-focused technical solutions.
+                </p>
+            </div>
+            <div class="review">
+                <img src="#">
+                <p class="reviewName">Alicia Potter</p>
+                <p class="actualReview">Chosen Technical Services has been our go-to partner for all technical needs in our commercial properties. From handling complex electrical works to ensuring the smooth operation of our HVAC systems, they consistently deliver top-notch service. Their flexibility and attention to detail make them stand out, and we appreciate the expertise they bring to every project.</p>
+             </div>
+             <div class="review">
+                <img src="#">
+                <p class="reviewName">Edward B. Suarez</p>
+                <p class="actualReview">I recently faced a plumbing emergency, and Chosen Technical Services came to my rescue. Their swift response and efficient plumbing solutions saved the day. I was impressed not only by their technical expertise but also by the professionalism and courtesy of their team. I now have their contact saved for any future technical needs.</p>
+             </div>
         </div>
-        <div>
-            <img src="#">
-            <img src="#">
-            <p class="reviewName">Name</p>
-            <p class="actualReview">Review</p>
-         </div>
-         <div>
-            <img src="#">
-            <img src="#">
-            <p class="reviewName">Name</p>
-            <p class="actualReview">Review</p>
-         </div>
-         <div>
-            <img src="#">
-            <img src="#">
-            <p class="reviewName">Name</p>
-            <p class="actualReview">Review</p>
-         </div>
-         <div>
-            <img src="#">
-            <img src="#">
-            <p class="reviewName">Name</p>
-            <p class="actualReview">Review</p>
-         </div>
     </div>
-    <div class="callText">
-        <p>Want to hire us for your maintenance work?</p>
-        <p>Call Us Today. We are available to serve your needs!</p>
+
+    <div class="btns-left-right">
+        <button class="prev-btn">&#8592;</button>
+        <button class="next-btn">&#8594;</button>
     </div>
-    <div class="detailsInfo">
+
+    <section class="callText">
         <div>
-            <p>Get in touch with us!</p>
-            <p>+971 55 479 2789  +971 56 904 9089  +971 50 798 8683</p>
+            <h3>Want to hire us for your maintenance work?</h3>
+            <p>Call Us Today. We are available to serve your needs!</p>
+            <a href=""><button id="call-now-home"><img src="/Media/ICONS/phone-call-icon-1024x1023-43n5tobu 1.png"> Call Us Now</button></a>
+        </div>
+    </section>
+    <footer>
+        <section id="contacts-links">
+            <h3>Get in touch with us!</h5>
+            <ul id="contact-nums">
+                <li><img src="/Media/ICONS/phone-call-icon-1024x1023-43n5tobu 1.png" alt="telephone-icon"></li>
+                <li>+971 55 479 2789</li>
+                <li>+971 56 904 9089</li>
+                <li>+971 50 798 8683</li>
+            </ul>
             <hr>
-            <p>info@chosentechnicalservices.com</p>
-            <img src="#">
-            <img src="#">
-            <img src="#">
-            <img src="#">
-        </div>
-    </div>
-    <footer class="footerText">
-        Copyright &copy; 2024 Chosen Technical Services
+            <ul id="socmed-links">
+                <li id="email"><img src="/Media/ICONS/Mail-Icon-White-on-Grey 1.png"><p>info@chosentechnicalservices.com</p></li>
+                <li class="other" id="insta"><img src="/Media/ICONS/1683192079instagram-logo-black-and-white-png.png" alt="instagram-icon"></li>
+                <li class="other" id="whatsapp"><img src="/Media/ICONS/whatsapp-logo-black-and-white.png"></li>
+                <li class="other" id="facebook"><img src="/Media/ICONS/59439.png"></li>
+                <li class="other" id="linkedin"><img src="/Media/ICONS/new-linkedin-logo-white-black-png.png"></li>
+            </ul>
+        </section>
+
+        <section id="copyright">
+            <p id="copyright-text">Copyright &copy;2024 Chosen Technical Services</p>
+        </section>  
     </footer>
+
+    <script src="/Design and Layout/index.js"></script>
 </body>
 </html>
