@@ -203,9 +203,8 @@ body{background-color: #49547A; display:flexbox; color: white;}
         img{width: 250px;}
     }
     @include phone-tablet(481px, 700px){
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 45% 45%;
         column-gap: 5%;
-        img{max-width: 95%;}
     }
     @include phone-tablet(701px, 1024px){
         grid-template-columns: 45% 45%;
