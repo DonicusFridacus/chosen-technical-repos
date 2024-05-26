@@ -103,6 +103,7 @@
 /*---FOOTER---*/
 footer{
     background-color: black; 
+    color: black;
     padding: 50px 0 50px 0;
     @include standard-phone(480px){
         height: 270px;

@@ -13,6 +13,7 @@
 body {
   background-color: #49547A;
   display: flexbox;
+  color: white;
 }
 
 /*Headings*/
@@ -62,7 +63,6 @@ body {
 }
 
 .article-headings h2 {
-  color: white;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
@@ -93,7 +93,6 @@ body {
 
 /*--- HOME PAGE ---*/
 #pageInfo {
-  color: white;
   margin: 10% auto 10% auto;
   width: 90%;
   display: grid;
@@ -113,7 +112,7 @@ body {
 @media screen and (max-width: 480px) {
   #pageInfo {
     display: block;
-    font-size: small;
+    font-size: 11px;
     text-align: justify;
   }
   #pageInfo h2 {
@@ -135,6 +134,7 @@ body {
     font-size: small;
     grid-template-areas: "one two" "one three";
     grid-template-columns: 40% 60%;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -193,6 +193,7 @@ body {
     display: block;
     padding: 10px 30px 10px 30px;
     margin: 20px auto 0 auto;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 700px) {
@@ -215,7 +216,6 @@ body {
 }
 
 #persuadeInfo {
-  color: white;
   display: grid;
   grid-template-columns: 45% 45%;
   -moz-column-gap: 10%;
@@ -235,6 +235,7 @@ body {
   #persuadeInfo {
     display: block;
     text-align: justify;
+    font-size: 11px;
   }
   #persuadeInfo section {
     margin-top: 40px;
@@ -248,6 +249,7 @@ body {
     display: block;
     width: 80%;
     padding: 20px 0 20px 0;
+    font-size: 12px;
   }
   #persuadeInfo img {
     margin: 0 auto 0 auto;
@@ -266,7 +268,6 @@ body {
   margin: 50px auto auto auto;
   justify-content: center;
   text-align: center;
-  color: white;
 }
 .serviceInfo .service {
   margin: 10% auto 10% auto;
@@ -328,7 +329,6 @@ body {
 
 #view-more {
   text-align: center;
-  color: white;
 }
 #view-more:hover {
   color: #FFE699;
@@ -336,31 +336,87 @@ body {
 
 /*THIS IS STILL INCOMPLETE*/
 .reviewInfo {
-  display: flex;
-  width: 20%;
-  margin: auto;
-  background-color: #FFE699;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  width: 90%;
+  margin: 50px auto 0 auto;
+  border-radius: 20px;
   overflow: hidden;
 }
-
-.reviewInfo-slide {
-  display: flex;
+@media screen and (max-width: 480px) {
+  .reviewInfo {
+    width: 80%;
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .reviewInfo {
+    width: 50%;
+    display: block;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .reviewInfo {
+    grid-template-columns: 45% 45%;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .reviewInfo {
+    margin-bottom: 50px;
+  }
 }
 
 .review {
-  display: block;
-  margin: 0 5% 0 5%;
-  background-color: #FFE699;
-  color: white;
-  width: 90%;
-  position: relative;
-  flex-shrink: 0;
-  font-size: small;
+  background-color: white;
+  color: black;
+  margin: auto;
+  width: 300px;
+  height: 100%;
+  border-radius: 20px;
+  font-size: medium;
+  padding: 20px;
   cursor: pointer;
+}
+.review p {
+  padding: 10px 0 10px 0;
+}
+@media screen and (max-width: 700px) {
+  .review {
+    width: 100%;
+  }
+}
+
+/*This needs to be deleted after the previous and next button are working*/
+@media screen and (max-width: 700px) {
+  .customer2, .customer3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .customer3 {
+    display: none;
+  }
+}
+
+/*REMOVE---end*/
+.reviewName {
+  font-size: large;
+  font-weight: bold;
+  color: #49547A;
 }
 
 .btns-left-right {
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .btns-left-right {
+    display: none;
+  }
 }
 
 .prev-btn, .next-btn {
@@ -373,9 +429,20 @@ body {
 .prev-btn:hover, .next-btn:hover {
   background-color: #FFE699;
 }
+@media screen and (max-width: 480px) {
+  .prev-btn, .next-btn {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .prev-btn, .next-btn {
+    width: 90px;
+  }
+}
 
 /*---END--- THIS IS STILL INCOMPLETE*/
 .callText {
+  color: black;
   width: 100%;
   height: 200px;
   background-image: url(/Media/Home/contact-us-bg.jpg);
@@ -444,7 +511,6 @@ body {
   -moz-column-gap: 5%;
        column-gap: 5%;
   margin-top: 50px;
-  color: white;
   grid-template-columns: 25% 25% 25%;
   row-gap: 12%;
 }
@@ -479,7 +545,6 @@ body {
 }
 
 .if-interested {
-  color: white;
   text-align: center;
 }
 .if-interested button {
@@ -536,9 +601,7 @@ body {
 }
 
 /*--- ABOUT US PAGE---*/
-/*EDITS ON THE 1024px and Up screens still need refinement*/
 .no-line-header {
-  color: white;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -551,7 +614,6 @@ body {
 .about-us, .mission-vision {
   display: grid;
   grid-template-columns: 50% 50%;
-  color: white;
   margin: 5% 0 15% 0;
 }
 .about-us div, .mission-vision div {
@@ -590,7 +652,6 @@ body {
 }
 
 .company-projects {
-  color: white;
   margin: 10% auto 10% auto;
   text-align: center;
   display: grid;

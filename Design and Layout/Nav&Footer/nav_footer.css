@@ -127,6 +127,7 @@
 /*---FOOTER---*/
 footer {
   background-color: black;
+  color: black;
   padding: 50px 0 50px 0;
 }
 @media screen and (max-width: 480px) {

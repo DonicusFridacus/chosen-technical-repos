@@ -28,7 +28,7 @@
     font-family: "DM Sans", sans-serif;
 }
 
-body{background-color: #49547A; display:flexbox;}
+body{background-color: #49547A; display:flexbox; color: white;}
 
 /*Headings*/
 .article-headings{
@@ -55,7 +55,6 @@ body{background-color: #49547A; display:flexbox;}
 }
 
 .article-headings h2{
-    color: white;
     text-align: center;
     @include standard-phone(480px){
         width: 165px;
@@ -78,7 +77,6 @@ body{background-color: #49547A; display:flexbox;}
 
 /*--- HOME PAGE ---*/
 #pageInfo{
-    color: white;
     margin: 10% auto 10% auto;
     width: 90%;
     display: grid;
@@ -92,7 +90,7 @@ body{background-color: #49547A; display:flexbox;}
     .welcome-text{text-align: justify;}
     @include standard-phone(480px){
         display: block;
-        font-size: small;
+        font-size: 11px;
         text-align: justify;
         h2{text-align: center; color: #FFE699;}
         img{width: 190px;}
@@ -105,6 +103,7 @@ body{background-color: #49547A; display:flexbox;}
         "one two"
         "one three";
         grid-template-columns: 40% 60%;
+        font-size: 12px;
     }
     @include tablet-laptop(1024px){
         font-size: large;
@@ -141,6 +140,7 @@ body{background-color: #49547A; display:flexbox;}
         display: block;
         padding: 10px 30px 10px 30px;
         margin: 20px auto 0 auto;
+        font-size: 11px;
     }
     @include phone-tablet(481px, 700px){
         width: 90%;
@@ -157,7 +157,6 @@ body{background-color: #49547A; display:flexbox;}
 }
 
 #persuadeInfo{
-    color: white;
     display: grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
@@ -173,6 +172,7 @@ body{background-color: #49547A; display:flexbox;}
     @include standard-phone(480px){
         display: block;
         text-align: justify;
+        font-size: 11px;
         section{margin-top: 40px;}
         img{max-width: 100%;}
     }
@@ -180,6 +180,7 @@ body{background-color: #49547A; display:flexbox;}
         display: block;
         width: 80%;
         padding: 20px 0 20px 0;
+        font-size: 12px;
         img{margin: 0 auto 0 auto; max-width: 100%;}
     }
     @include tablet-laptop(600px){
@@ -193,7 +194,6 @@ body{background-color: #49547A; display:flexbox;}
     margin: 50px auto auto auto;
     justify-content: center;
     text-align: center;
-    color: white;
     .service{margin: 10% auto 10% auto;}
     img{border-radius: 20px;}
     #srvce-4, #srvce-5, #srvce-6, #srvce-7, #srvce-8{display: none;}
@@ -224,34 +224,67 @@ body{background-color: #49547A; display:flexbox;}
 
 #view-more{
     text-align: center;
-    color: white;
     &:hover{color: #FFE699;}
 }
 
 /*THIS IS STILL INCOMPLETE*/
 .reviewInfo{
-    display: flex;
-    width: 20%;
-    margin: auto;
-    background-color: #FFE699;
-    overflow: hidden;
-}
-.reviewInfo-slide{
-    display: flex;
-}
-.review{
-    display: block;
-    margin: 0 5% 0 5%;
-    background-color: #FFE699;
-    color: white;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
     width: 90%;
-    position: relative;
-    flex-shrink: 0;
-    font-size: small;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    @include standard-phone(480px){
+        width: 80%;
+        display: block;
+    }
+    @include phone-tablet(481px, 700px){
+        width: 50%;
+        display: block;
+    }
+    @include phone-tablet(701px, 1024px){
+        grid-template-columns: 45% 45%;
+        column-gap: 10%;
+    }
+    @include tablet-laptop(1024px){margin-bottom:50px;}
+}
+.review{    
+    background-color: white;
+    color: black;
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 20px;
     cursor: pointer;
+    p{padding: 10px 0 10px 0;}
+    @include standard-phone(700px){
+        width: 100%; 
+    }
 }
 
-.btns-left-right{text-align: center;}
+/*This needs to be deleted after the previous and next button are working*/
+.customer2, .customer3{
+    @include standard-phone(700px){
+        display: none;}
+    }
+.customer3{@include phone-tablet(701px, 1024px){display: none;}}
+/*REMOVE---end*/
+
+
+.reviewName{
+    font-size: large;
+    font-weight: bold;
+    color:#49547A;
+}
+
+.btns-left-right{
+    text-align: center;
+    @include tablet-laptop(1024px){display: none;}
+}
 .prev-btn, .next-btn{
     width: 10%;
     padding: 5px;
@@ -259,10 +292,13 @@ body{background-color: #49547A; display:flexbox;}
     margin: 5% 10% 5% 10%;
     font-size: large;
     &:hover{background-color: #FFE699;}
+    @include standard-phone(480px){width: 80px;}
+    @include phone-tablet(481px, 700px){width: 90px;}
 }
 /*---END--- THIS IS STILL INCOMPLETE*/
 
 .callText{
+    color: black;
     width: 100%;
     height: 200px;
     background-image: url(/Media/Home/contact-us-bg.jpg);
@@ -310,7 +346,6 @@ body{background-color: #49547A; display:flexbox;}
     justify-content: center;
     column-gap: 5%;
     margin-top: 50px;
-    color: white;
     grid-template-columns: 25% 25% 25%;
         row-gap: 12%;
     h4{padding-bottom: 10px;}
@@ -335,7 +370,6 @@ body{background-color: #49547A; display:flexbox;}
 }
 
 .if-interested{
-    color: white;
     text-align: center;
     button{
         border-radius: 5px;
@@ -377,9 +411,7 @@ body{background-color: #49547A; display:flexbox;}
 
 
 /*--- ABOUT US PAGE---*/
-/*EDITS ON THE 1024px and Up screens still need refinement*/
 .no-line-header{
-    color: white;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -393,7 +425,6 @@ body{background-color: #49547A; display:flexbox;}
 .about-us, .mission-vision{
     display: grid;
     grid-template-columns: 50% 50%;
-    color: white;
     margin: 5% 0 15% 0;
     div{width: 85%; margin: auto;}
     img{width: 100%; margin: auto 0 auto 0;}
@@ -410,7 +441,6 @@ body{background-color: #49547A; display:flexbox;}
 }
 
 .company-projects{
-    color: white;
     margin: 10% auto 10% auto;
     text-align: center;
     display: grid;
