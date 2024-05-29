@@ -103,7 +103,7 @@ body{background-color: #49547A; display:flexbox; color: white;}
         "one two"
         "one three";
         grid-template-columns: 40% 60%;
-        font-size: 12px;
+        font-size: medium;
     }
     @include tablet-laptop(1024px){
         font-size: large;
@@ -156,6 +156,7 @@ body{background-color: #49547A; display:flexbox; color: white;}
     }
 }
 
+/*Why Choose Us Section*/
 #persuadeInfo{
     display: grid;
     grid-template-columns: 45% 45%;
@@ -169,6 +170,7 @@ body{background-color: #49547A; display:flexbox; color: white;}
         column-gap: 10%;
         margin: 20px 0 50px 0;
     }
+    p{text-align: justify; padding: 10px;}
     @include standard-phone(480px){
         display: block;
         text-align: justify;
@@ -188,6 +190,7 @@ body{background-color: #49547A; display:flexbox; color: white;}
     }
 }
 
+/*Our Services Section*/
 .serviceInfo{ 
     display: grid;
     width: 95%;
@@ -226,76 +229,102 @@ body{background-color: #49547A; display:flexbox; color: white;}
     &:hover{color: #FFE699;}
 }
 
-/*THIS IS STILL INCOMPLETE*/
-.reviewInfo{
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-    column-gap: 2%;
-    width: 90%;
-    margin: 50px auto 0 auto;
-    border-radius: 20px;
-    overflow: hidden;
-    @include standard-phone(480px){
-        width: 80%;
-        display: block;
-    }
-    @include phone-tablet(481px, 700px){
-        width: 50%;
-        display: block;
-    }
-    @include phone-tablet(701px, 1024px){
-        grid-template-columns: 45% 45%;
-        column-gap: 10%;
-    }
-    @include tablet-laptop(1024px){margin-bottom:50px;}
+/*Reviews Section*/
+
+.review-section{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+    position: relative;
+    @include standard-phone(700px){max-width: 320px;}
+    @include phone-tablet(701px, 1024px){max-width: 701px;}
 }
-.review{    
+
+.review-carousel{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 11px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    @include standard-phone(700px){
+        grid-auto-columns: 100%;
+    }
+    @include phone-tablet (701px, 1024px){
+        grid-auto-columns: calc((100% / 2) - 10px);
+    }
+}
+
+.review-carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.review-carousel.no-transition{scroll-behavior: auto;}
+
+.review-carousel.dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.review-carousel.dragging .review{
+    cursor: grab;
+    user-select: none;
+}
+
+.review-carousel :where(.review, .review-image){
+    display: flex;
+    align-items: center;
+}
+
+.review{
+    scroll-snap-align: start;
+    height: 100%;
+    list-style-type: none;
     background-color: white;
     color: black;
-    margin: auto;
-    width: 300px;
-    height: 100%;
-    border-radius: 20px;
-    font-size: medium;
-    padding: 20px;
     cursor: pointer;
-    p{padding: 10px 0 10px 0;}
-    @include standard-phone(700px){
-        width: 100%; 
-    }
-}
-
-/*This needs to be deleted after the previous and next button are working*/
-.customer2, .customer3{
-    @include standard-phone(700px){
-        display: none;}
-    }
-.customer3{@include phone-tablet(701px, 1024px){display: none;}}
-/*REMOVE---end*/
-
-
-.reviewName{
-    font-size: large;
-    font-weight: bold;
-    color:#49547A;
-}
-
-.btns-left-right{
-    text-align: center;
-    @include tablet-laptop(1024px){display: none;}
-}
-.prev-btn, .next-btn{
-    width: 10%;
-    padding: 5px;
+    padding: 50px;
+    flex-direction: column;
     border-radius: 20px;
-    margin: 5% 10% 5% 10%;
-    font-size: large;
-    &:hover{background-color: #FFE699;}
-    @include standard-phone(480px){width: 80px;}
-    @include phone-tablet(481px, 700px){width: 90px;}
+    .reviewName{
+        padding: 10px 0 10px;
+        font-size: large;
+        font-weight: bold;
+    }
+    img{width: 20px;}
+    @include standard-phone(700px){
+        .actualReview{font-size: x-small;}
+    }
 }
-/*---END--- THIS IS STILL INCOMPLETE*/
 
+.review-section button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: large;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(255, 230, 153);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn{
+    left: 10px;
+    @include standard-phone(700px){left: 0;}
+}
+.next-btn{
+    right: 10px;
+    @include standard-phone(700px){right: 0;}
+}
+
+// Call Us Today Section
 .callText{
     color: black;
     width: 100%;
