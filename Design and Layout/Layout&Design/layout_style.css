@@ -278,6 +278,7 @@ body {
 }
 .serviceInfo img {
   border-radius: 20px;
+  height: 70%;
 }
 .serviceInfo #srvce-4, .serviceInfo #srvce-5, .serviceInfo #srvce-6, .serviceInfo #srvce-7, .serviceInfo #srvce-8 {
   display: none;
@@ -291,6 +292,7 @@ body {
   }
   .serviceInfo img {
     width: 250px;
+    max-height: 60%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 700px) {
@@ -298,6 +300,10 @@ body {
     grid-template-columns: 45% 45%;
     -moz-column-gap: 5%;
          column-gap: 5%;
+  }
+  .serviceInfo img {
+    width: 220px;
+    max-height: 70%;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1024px) {
@@ -555,9 +561,13 @@ body {
   }
 }
 
-.services-img {
-  max-width: 90%;
+.services div {
   padding-bottom: 20px;
+}
+
+.services-img {
+  max-width: 100%;
+  border-radius: 20px;
 }
 
 .if-interested {
