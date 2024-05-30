@@ -91,7 +91,7 @@ body {
   }
 }
 
-/*--- HOME PAGE ---*/
+/*----- HOME PAGE -----*/
 #pageInfo {
   margin: 10% auto 10% auto;
   width: 90%;
@@ -215,7 +215,6 @@ body {
   }
 }
 
-/*Why Choose Us Section*/
 #persuadeInfo {
   display: grid;
   grid-template-columns: 45% 45%;
@@ -267,7 +266,6 @@ body {
   }
 }
 
-/*Our Services Section*/
 .serviceInfo {
   display: grid;
   width: 95%;
@@ -337,7 +335,6 @@ body {
   color: #FFE699;
 }
 
-/*Reviews Section*/
 .review-section {
   max-width: 1100px;
   width: 100%;
@@ -523,7 +520,7 @@ body {
   }
 }
 
-/*--- SERVICES PAGE ---*/
+/*----- SERVICES PAGE -----*/
 .offered-services {
   display: grid;
   justify-content: center;
@@ -619,17 +616,12 @@ body {
   }
 }
 
-/*--- ABOUT US PAGE---*/
+/*----- ABOUT US PAGE -----*/
 .no-line-header {
   text-align: center;
   padding-bottom: 10px;
 }
 
-/*#header-about-us{@include tablet-laptop(481px){padding-left: 10%;}}
-#header-mission-vision{@include tablet-laptop(481px){
-    text-align: right;
-    padding-right: 5%;
-}}*/
 .about-us, .mission-vision {
   display: grid;
   grid-template-columns: 50% 50%;

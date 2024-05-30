@@ -2,7 +2,7 @@
 - a standard phone to a large phone resolution, 
 - a standard tablet to a large tablet resolution, 
 - and a laptop */
-/*CONTACT US PAGE*/ /*INCOMPLETE*/
+/*----- CONTACT US PAGE ----- */
 #contact-us-text {
   width: 40%;
   margin: 20px auto 20px auto;
@@ -149,7 +149,7 @@ input[type=submit]:hover {
   }
 }
 
-/*SIGN UP and LOG IN PAGE*/
+/* ----- SIGN UP and LOG IN PAGE ----- */
 .signup-login-body {
   background-color: white;
   color: black;
