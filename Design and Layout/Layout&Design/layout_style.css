@@ -163,13 +163,10 @@ body {
 }
 
 .pageInfo-btns {
-  grid-area: three;
-}
-
-.pageInfo-btns {
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
+  grid-area: three;
 }
 @media screen and (max-width: 480px) {
   .pageInfo-btns {

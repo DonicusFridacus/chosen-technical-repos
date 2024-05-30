@@ -119,13 +119,13 @@ body{background-color: #49547A; display:flexbox; color: white;}
 
 #pageInfo img{grid-area: one;}
 .info_text{grid-area: two;}
-.pageInfo-btns{grid-area: three;}
 
 .pageInfo-btns{
     @include standard-phone(480px){display: block;}
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
+    grid-area: three;
 }
 
 #free-estimate-btn, #view-services-btn{
